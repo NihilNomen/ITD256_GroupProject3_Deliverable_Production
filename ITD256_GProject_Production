@@ -1,0 +1,18 @@
+CREATE TABLE Payment (
+Payment_ID int,
+Patient_ID int,
+Payment_Amount decimal(10,2),
+Payed tinyint,
+PRIMARY KEY (Payment_ID)
+);
+
+
+INSERT INTO Payment(Payment_ID, Patient_ID, Payment_Amount, Payed)
+VALUES
+	(000001, 000001, 200.00, 1),
+    (000002, 000002, 17580.00, 1),
+    (000003, 000003, 2139.00, 0),
+    (000004, 000004, 185.00, 1),
+    (000005, 000005, 200.00, 1),
+    (000006, 000006, 185.00, 1),
+    (000007, 000007, 114750.00, 0);
