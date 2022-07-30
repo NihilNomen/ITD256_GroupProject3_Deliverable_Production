@@ -33,6 +33,7 @@ VALUES
 SHOW CREATE TABLE Payment;
 
 /*The following SELECT COMMAND ARE USED FOR DEBUGGING TO PROVE THE CODE ABOVE WORKS PLEASE DELETE*/
+/*With this command it should show all data from the Payment Table*/
 SELECT * FROM Payment;
 
 /*This entire script was literally in the editor at ONECOMPILER.COM for accuracy and functionalty testing, it works on my end*/
