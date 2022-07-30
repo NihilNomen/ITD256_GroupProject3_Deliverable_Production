@@ -1,0 +1,40 @@
+CREATE TABLE Patient (
+Patient_ID int,
+Patient_Name varchar(10),
+Patient_Address varchar(10),
+Patient_Contact varchar(10),
+Emergency_Contact varchar(10),
+Insurance varchar(10),
+Appointment_Details varchar(10),
+PRIMARY KEY (Patient_ID)
+);
+
+/*THE PATIENT TABLE WAS NEED TO TEST THE PAYMENT TABLE*/
+/*YOU CANT ASSIGN A PAYMENT TO A NON-EXISTANT PATIENT, TECHNICALLY!!!*/
+
+CREATE TABLE Payment (
+Payment_ID int,
+Patient_ID int,
+Payment_Amount decimal(10,2),
+Payed tinyint,
+PRIMARY KEY (Payment_ID)
+);
+
+INSERT INTO Payment(Payment_ID, Patient_ID, Payment_Amount, Payed)
+VALUES
+	(000001, 000001, 200.00, 1),
+    (000002, 000002, 17580.00, 1),
+    (000003, 000003, 2139.00, 0),
+    (000004, 000004, 185.00, 1),
+    (000005, 000005, 200.00, 1),
+    (000006, 000006, 185.00, 1),
+    (000007, 000007, 114750.00, 0);
+    
+SHOW CREATE TABLE Payment;
+
+/*The following SELECT COMMAND ARE USED FOR DEBUGGING TO PROVE THE CODE ABOVE WORKS PLEASE DELETE*/
+SELECT * FROM Payment;
+
+/*This entire script was literally in the editor at ONECOMPILER.COM for accuracy and functionalty testing, it works on my end*/
+
+/*>>>>PLEASE CONTACT ME WITH YOUR COMMENTS QUESTIONS AND CONCERNS<<<<*/
